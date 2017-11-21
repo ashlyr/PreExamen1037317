@@ -4,14 +4,14 @@ public interface Poligono {
 	int salidaa;
 	int salidap;
 	
-	public int area() {
+	public void area() {
 		
 		
-		return salidaa;
+		
 	}
-	public int perimetro()
+	public void perimetro()
 	{
-		return salidap;
+	
 	}
 
 	

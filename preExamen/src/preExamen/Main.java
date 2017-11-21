@@ -21,7 +21,7 @@ public class Main {
 		
 		System.out.println("Ingrese la frase:");
 		Scanner frase=new Scanner(System.in);
-		String nFrase;
+		String nFrase="";
 		try {
 			nFrase = frase.nextLine();
 		} catch (Exception e) {
@@ -29,18 +29,20 @@ public class Main {
 		}
 		System.out.println("Ingrese una frase:");
 		Scanner distancia=new Scanner(System.in);
-		int nDistancia;
+		int nDistancia=0;
 		try {
 			nDistancia = Integer.parseInt(distancia.nextLine());
 		} catch (Exception e) {
 			System.out.println("Ingrese un número");
 		}
 		primerProblema ej01= new primerProblema(nFrase, nDistancia);
-		ej01.cifrarCesar("",0);
+		ej01.cifrarCesar(nFrase,nDistancia);
 		System.out.println("La frase invertida cifrada es: " + ej01.Salida1);
 		System.out.println("");
 		
-	}
-}
+	
+	
 
+}
+}
 
